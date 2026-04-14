@@ -47,6 +47,44 @@ We didn't just build a scraper; we engineered an enterprise-grade extraction eng
 
 ---
 
+## 🚀 Getting Started
+
+To use this scraper locally or contribute to its development, follow these steps:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/MuLIAICHI/rekrute-jobs-scraper.git
+cd rekrute-jobs-scraper
+```
+
+### 2. Install Dependencies
+Make sure you have [Node.js](https://nodejs.org/) (version 20 or higher) installed.
+```bash
+npm install
+```
+
+### 3. Run Locally
+You can run the scraper directly using Node.js or the [Apify CLI](https://docs.apify.com/cli).
+
+**Using Apify CLI (Recommended for development):**
+```bash
+apify run
+```
+
+**Using Node.js:**
+```bash
+npm start
+```
+*Note: Local runs will store results in the `storage` directory.*
+
+### 4. Deploy to Apify
+To host this on your own Apify account:
+```bash
+apify push
+```
+
+---
+
 ## 🛠️ Input Configuration
 
 Our Actor is highly customizable via a beautiful Apify UI, or programmatically via API JSON.
