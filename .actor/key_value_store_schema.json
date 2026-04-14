@@ -1,0 +1,19 @@
+{
+  "actorKeyValueStoreSchemaVersion": 1,
+  "title": "Rekrute Jobs Scraper Key-Value Store",
+  "description": "Organizes records saved to the default key-value store, such as runtime logs or HTML snapshots for debugging.",
+  "collections": {
+    "stats": {
+      "title": "Run statistics",
+      "description": "JSON record(s) summarizing the scraping run.",
+      "key": "STATS",
+      "contentTypes": ["application/json"]
+    },
+    "snapshots": {
+      "title": "Debug HTML snapshots",
+      "description": "Raw HTML snapshots if page parsing fails, used for debugging UI updates.",
+      "keyPrefix": "snapshot-",
+      "contentTypes": ["text/html"]
+    }
+  }
+}

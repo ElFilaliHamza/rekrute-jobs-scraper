@@ -1,0 +1,36 @@
+{
+    "title": "Rekrute Jobs Scraper",
+    "description": "Extract job postings from Rekrute.com.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "List of Rekrute URLs to start from. Defaults to the main job feed if empty.",
+            "editor": "requestListSources"
+        },
+        "maxListings": {
+            "title": "Max Jobs to Scrape",
+            "type": "integer",
+            "description": "Maximum number of jobs to extract. Set to 0 to scrape all available.",
+            "default": 100,
+            "minimum": 0
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Select proxies to be used by the scraper.",
+            "prefill": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": ["RESIDENTIAL"]
+            },
+            "default": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": ["RESIDENTIAL"]
+            },
+            "editor": "proxy"
+        }
+    },
+    "required": ["proxyConfiguration"]
+}

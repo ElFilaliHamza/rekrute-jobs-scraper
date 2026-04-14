@@ -1,0 +1,118 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "job_title": {
+        "type": ["string", "null"],
+        "title": "Job Title",
+        "description": "The title of the job listing."
+      },
+      "company_name": {
+        "type": ["string", "null"],
+        "title": "Company Name",
+        "description": "Name of the company offering the job."
+      },
+      "location": {
+        "type": ["string", "null"],
+        "title": "Location",
+        "description": "Geographical location (City or Region)."
+      },
+      "date_posted": {
+        "type": ["string", "null"],
+        "title": "Date Posted",
+        "description": "The date when the job was originally posted."
+      },
+      "contract_type": {
+        "type": ["string", "null"],
+        "title": "Contract Type",
+        "description": "Type of employment contract."
+      },
+      "experience_level": {
+        "type": ["string", "null"],
+        "title": "Experience Level",
+        "description": "Required years of experience."
+      },
+      "education_level": {
+        "type": ["string", "null"],
+        "title": "Education Level",
+        "description": "Minimum required level of education."
+      },
+      "sector_industry": {
+        "type": ["string", "null"],
+        "title": "Sector / Industry",
+        "description": "Industry sector of the job posting."
+      },
+      "description": {
+        "type": ["string", "null"],
+        "title": "Job Description",
+        "description": "Full text description of the roles and responsibilities."
+      },
+      "job_url": {
+        "type": "string",
+        "title": "Job URL",
+        "description": "Direct link to the job posting on Rekrute.",
+        "format": "uri"
+      },
+      "scraped_at": {
+        "type": ["string", "null"],
+        "title": "Scraped At",
+        "description": "Timestamp of when the job was scraped.",
+        "format": "date-time"
+      }
+    },
+    "required": [
+      "job_url"
+    ]
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "job_title",
+          "company_name",
+          "location",
+          "sector_industry",
+          "contract_type",
+          "date_posted",
+          "job_url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "job_title": {
+            "label": "Job Title",
+            "format": "text"
+          },
+          "company_name": {
+            "label": "Company",
+            "format": "text"
+          },
+          "location": {
+            "label": "Location",
+            "format": "text"
+          },
+          "sector_industry": {
+            "label": "Sector",
+            "format": "text"
+          },
+          "contract_type": {
+            "label": "Contract",
+            "format": "text"
+          },
+          "date_posted": {
+            "label": "Posted Date",
+            "format": "text"
+          },
+          "job_url": {
+            "label": "Link",
+            "format": "link"
+          }
+        }
+      }
+    }
+  }
+}

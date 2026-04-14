@@ -1,0 +1,9 @@
+{
+	"id": "G4nHFFIESKD1GGv",
+	"json": "{\"id\":\"G4nHFFIESKD1GGv\",\"url\":\"https://www.rekrute.com/offres.html?p=3&s=1&o=1\",\"uniqueKey\":\"https://www.rekrute.com/offres.html?o=1&p=3&s=1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"LISTING_PAGE\"}}",
+	"method": "GET",
+	"orderNo": 1776118081288,
+	"retryCount": 0,
+	"uniqueKey": "https://www.rekrute.com/offres.html?o=1&p=3&s=1",
+	"url": "https://www.rekrute.com/offres.html?p=3&s=1&o=1"
+}

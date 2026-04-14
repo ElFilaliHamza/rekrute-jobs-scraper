@@ -1,0 +1,25 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Rekrute Jobs Scraper Output",
+  "description": "Information extracted from Rekrute job postings, designed to power B2B CRM generation and ML insights.",
+  "properties": {
+    "jobs": {
+      "type": "string",
+      "title": "Jobs (Overview)",
+      "description": "The main dataset containing all scraped job listings and data points.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    },
+    "runStats": {
+      "type": "string",
+      "title": "Run statistics",
+      "description": "JSON record with scraping metrics regarding the run.",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/STATS"
+    },
+    "debugSnapshots": {
+      "type": "string",
+      "title": "Debug HTML snapshots",
+      "description": "HTML snapshots saved when a detail page could not be parsed.",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/keys?collection=snapshots"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "rekrute-jobs-scraper",
+  "version": "0.1.0",
+  "description": "Apify Actor — scrapes rekrute.com job listings for ML training datasets and lead generation",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "start:dev": "apify run"
+  },
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.10.3",
+    "playwright": "^1.44.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
