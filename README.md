@@ -1,5 +1,8 @@
 # 🚀 Rekrute Jobs Scraper | The Ultimate MENA Job Market Extractor
 
+[![Apify Store](https://img.shields.io/badge/Available%20on-Apify%20Store-success?style=for-the-badge&logo=apify)](https://apify.com/muliaichi/rekrute-jobs-scraper)
+[![GitHub Repository](https://img.shields.io/badge/Open%20Source-GitHub-black?style=for-the-badge&logo=github)](https://github.com/MuLIAICHI/rekrute-jobs-scraper)
+
 Welcome to the **Rekrute Jobs Scraper**, the most advanced, reliable, and comprehensive data extraction tool for [Rekrute.com](https://www.rekrute.com/) — Morocco’s premier professional job board. 
 
 If you are looking to truly dominate the digital landscape of the MENA (Middle East and North Africa) region, actionable and structured data is the undisputed king. This Actor isn't just a scraper; it's a **business intelligence pipeline** specifically designed to unlock the Moroccan job market at scale.
