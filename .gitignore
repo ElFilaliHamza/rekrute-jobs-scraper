@@ -1,0 +1,4 @@
+storage/*
+temp_*
+*.log
+node_modules/
